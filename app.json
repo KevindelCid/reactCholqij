@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "luzmayapp",
+    "slug": "luzmayapp",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "luzmayapp"
+}
