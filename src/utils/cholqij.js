@@ -2,11 +2,11 @@ import moment from 'moment';
 import "moment-timezone";
 import "moment/locale/es";
 
-export const cholqij = (year, month, day) => {
-  const date = new Date(year, month, day);
-  const formattedDate = format(date, "d 'de' MMMM 'de' yyyy");
-  console.log(formattedDate);
-};
+
+
+const nawals = ["B'atz", "E", "Aj", "I'x", "Tz'ikin",  "Ajmaq",  "No'j",  "Tijax", "Kawoq", "Ajpú", "Imox",  "Iq'", "Aq'ab'al", "K'at", "Kan", "Keme", "Keej", "Q'anil",  "Toj", "Tz'i'",];
+
+
 export const usableDate = (year, month, day) => {
   moment.tz.setDefault('America/Guatemala');
   const date = new Date(year, month, day);
@@ -27,10 +27,8 @@ export const prettiDate = (year, month, day) => {
 };
 
 
-
-const nawals = ["B'atz", "E", "Aj", "I'x", "Tz'ikin",  "Ajmaq",  "No'j",  "Tijax", "Kawoq", "Ajpú", "Imox",  "Iq'", "Aq'ab'al", "K'at", "Kan", "Keme", "Keej", "Q'anil",  "Toj", "Tz'i'",];
-
 export const getMayanDate = (dateString) => {
+// restaFechaHoy("1900-03-21")
   const date = new Date(dateString);
   const baseDate = new Date("457-01-18");
 
@@ -120,6 +118,7 @@ export const getMayanDate = (dateString) => {
 
 
   return {
+    cargador: abbDate(date),
     engendramientoAuxIzq: {  energy: energyEngendramientoAuxIzq === 0 ? 13 : energyEngendramientoAuxIzq,  nawal: engendramientoAuxIzq,  },
     engendramiento: {  energy: energyEngendramiento === 0 ? 13 : energyEngendramiento,  nawal: engendramiento,  },
     engendramientoAuxDer: {  energy: energyEngendramientoAuxDer  === 0 ? 13 : energyEngendramientoAuxDer, nawal: engendramientoAuxDer,  },
@@ -133,3 +132,37 @@ export const getMayanDate = (dateString) => {
 
 
 }
+
+
+// Define a function that takes a date parameter
+const abbDate = (date) => {
+  // Define the base date as March 21, 1900, which is 5 No'j in the Mayan calendar
+  const baseDate = new Date("1900-03-21");
+
+  // Calculate the difference in time between the input date and the base date in milliseconds
+  const timeDiff = date.getTime() - baseDate.getTime();
+
+  // Convert the time difference to days, counting for leap years
+  const msPerDay = 1000 * 60 * 60 * 24;
+  const daysDiff = Math.floor(timeDiff / msPerDay);
+
+  // Define the available chargers as an array
+  const chargers = ["No'j", "Iq'", "Keej", "E"];
+
+  // Calculate the index of the corresponding charger based on the number of days difference
+  const chargerIndex = daysDiff % chargers.length;
+
+  // Retrieve the corresponding charger based on the index
+  const charger = chargers[chargerIndex];
+
+  // Calculate the energy number based on the number of days difference
+  const energy = (daysDiff % 13) + 5; // 5 corresponds to the No'j day on the base date
+
+  // Return an object containing the energy number and the corresponding charger
+  return {
+    energy: energy % 13  === 0 ? 13 : energy % 13 , // Ensure that the energy number is within the range of 1-13
+    nawal: charger,
+  };
+};
+
+

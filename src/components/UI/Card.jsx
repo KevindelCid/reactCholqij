@@ -7,7 +7,7 @@ export const Card = ({ onPress, children, style }) => {
         borderWidth: 1,
         borderColor: "lightgray",
         borderRadius: 12,
-        width: 100,
+        width: 115,
         height: 100,
         backgroundColor: 'white', // Agregar un color de fondo
         ...style,

@@ -30,7 +30,11 @@ export const MyDateTimePicker = ({setSelectedDate}) => {
     };
   
     useEffect(() => {
-     setSelectedDate({ usableDate: usableDate(date.getFullYear(), date.getMonth(), date.getDate()), year: date.getFullYear(), month: date.getMonth(), day: date.getDate() })
+     setSelectedDate({ 
+      usableDate: usableDate(date.getFullYear(), date.getMonth(), date.getDate()),
+      prettiDate: prettiDate(date.getFullYear(), date.getMonth(), date.getDate()),
+      year: date.getFullYear(), month: date.getMonth(), day: date.getDate() 
+    })
     }, [date])
     
 
@@ -38,7 +42,7 @@ export const MyDateTimePicker = ({setSelectedDate}) => {
     return (
       <View>
         <View>
-          <Button onPress={showDatepicker} title="Select date" />
+          <Button onPress={showDatepicker} title="Seleccione una fecha" />
         </View>
         {/* <View>
           <Button onPress={showTimepicker} title="Select time" />

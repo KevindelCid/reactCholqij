@@ -1,1 +1,2 @@
-export { sayHello } from './cholqij'
+
+export { getImage } from "./images"
