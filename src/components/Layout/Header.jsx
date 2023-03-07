@@ -1,10 +1,11 @@
 import React from 'react'
-import { Text, View } from 'react-native'
+import { Text, View, Image } from 'react-native'
+import { getImage } from '../../utils/images'
 
 export const Header = () => {
   return (
     <View style={{ backgroundColor:'black',  height:80, width:'100%', justifyContent: 'center', alignItems: 'center', marginBottom:15}}>
-        <Text style={{ color: 'white', fontWeight:'bold', fontSize:20, }}>LUZMAYAPP</Text>
+        <Image source={getImage("luzmaya")} style={{   height:150, width:150, }}  resizeMode="contain" />
     </View>
   )
 }

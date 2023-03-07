@@ -1,6 +1,7 @@
 import moment from 'moment';
 import "moment-timezone";
 import "moment/locale/es";
+import { haab } from './haab';
 
 
 
@@ -31,6 +32,7 @@ export const getMayanDate = (dateString) => {
 // restaFechaHoy("1900-03-21")
   const date = new Date(dateString);
   const baseDate = new Date("457-01-18");
+
 
   const diff = date.getTime() - baseDate.getTime();
   const days = Math.floor(diff / (24 * 60 * 60 * 1000));
@@ -118,6 +120,7 @@ export const getMayanDate = (dateString) => {
 
 
   return {
+    haab: haab(date.toString()),
     cargador: abbDate(date),
     engendramientoAuxIzq: {  energy: energyEngendramientoAuxIzq === 0 ? 13 : energyEngendramientoAuxIzq,  nawal: engendramientoAuxIzq,  },
     engendramiento: {  energy: energyEngendramiento === 0 ? 13 : energyEngendramiento,  nawal: engendramiento,  },
