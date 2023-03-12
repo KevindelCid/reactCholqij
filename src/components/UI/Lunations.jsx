@@ -26,11 +26,11 @@ export const Lunations = ({lunations}) => {
                 />
                 <NawalCard
                   imageSource={() =>
-                    getImage(lunations.engendramientoAuxDer.nawal)
+                    getImage(lunations.haab.month)
                   }
-                  nawalName={lunations.engendramientoAuxDer.nawal}
-                  title={`aux engend. der`}
-                  day={lunations.engendramientoAuxDer.energy}
+                  nawalName={lunations.haab.month}
+                  title={`Día año Solar`}
+                  day={lunations.haab.numberDay}
                 />
               </GridCholqij>
 
