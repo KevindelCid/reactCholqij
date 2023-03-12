@@ -1,10 +1,23 @@
 import React from 'react'
-import { View } from 'react-native'
+import { View, Text } from 'react-native'
 import { GridCholqij } from '../Layout/GridCholqij'
 import { NawalCard } from './NawalCard'
 import { getImage } from '../../utils'
 
 export const Lunations = ({lunations}) => {
+
+  const totalEnergies = 
+  lunations.engendramientoAuxIzq.energy 
+  + lunations.engendramiento.energy
+  + lunations.engendramientoAuxDer.energy
+  + lunations.auxIz.energy
+  + lunations.nawal.energy
+  + lunations.auxDer.energy
+  + lunations.destinoAuxIzq.energy
+  + lunations.destino.energy 
+  + lunations.destinoAuxDer.energy
+
+
   return (
     <View style={{ paddingVertical: 20 }}>
           {Object.keys(lunations).length ? (
@@ -35,8 +48,9 @@ export const Lunations = ({lunations}) => {
                   day={lunations.haab.numberDay}
                 />
               </GridCholqij>
-
-              
+              <View style={{ justifyContent: "center", alignItems: "center" }}>
+              <Text style={{ fontSize:20, fontWeight: "800", marginBottom: 8 }} >9 Lunaciones, energías totales: {totalEnergies}</Text>
+              </View>
               <GridCholqij>
                 <NawalCard
                   imageSource={() =>

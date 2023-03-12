@@ -12,15 +12,21 @@ import {
 } from "./src/components";
 import { Switch, Text, View, Button } from "react-native";
 
-
 import { getMayanDate } from "./src/utils/cholqij";
 import { Lunations } from "./src/components/UI/Lunations";
 import { NawalCard } from "./src/components/UI/NawalCard";
 import { getImage } from "./src/utils";
 import { PrimaryButton } from "./src/components/UI/PrimaryButton";
+import { Footer } from "./src/components/Layout/Footer";
 
 export default function App() {
 
+
+
+  
+  
+  
+  
   const [lunations, setLunations] = useState({});
   const [selectedDate, setSelectedDate] = useState({
     usableDate: "",
@@ -49,7 +55,11 @@ export default function App() {
         <PrimaryButton  />
       
         <Lunations lunations={lunations} />
+
       </ContentContainer>
+      <Footer/>
     </Container>
+    
+
   );
 }
