@@ -8,14 +8,16 @@ import {
   GridCholqij,
   Header,
   MyDateTimePicker,
+
 } from "./src/components";
-import { Switch, Text, View } from "react-native";
+import { Switch, Text, View, Button } from "react-native";
 
 
 import { getMayanDate } from "./src/utils/cholqij";
 import { Lunations } from "./src/components/UI/Lunations";
 import { NawalCard } from "./src/components/UI/NawalCard";
 import { getImage } from "./src/utils";
+import { PrimaryButton } from "./src/components/UI/PrimaryButton";
 
 export default function App() {
 
@@ -44,6 +46,7 @@ export default function App() {
        <Text style={{ fontSize:20, fontWeight:"bold" }}>{selectedDate.prettiDate}</Text>
        </View>
         <MyDateTimePicker setSelectedDate={setSelectedDate} />
+        <PrimaryButton  />
       
         <Lunations lunations={lunations} />
       </ContentContainer>

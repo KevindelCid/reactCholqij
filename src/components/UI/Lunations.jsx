@@ -11,17 +11,19 @@ export const Lunations = ({lunations}) => {
             <>
              <GridCholqij>
                 <NawalCard
+                style={{ zIndex: 10 }}
                   imageSource={() =>
                     getImage(lunations.cargador.nawal)
                   } 
                   nawalName={lunations.cargador.nawal}
-                  title={`nawal Cargador`}
+                  title={`Cargador`}
                   day={lunations.cargador.energy}
+                  
                 />
                 <NawalCard
                   imageSource={() => getImage(lunations.nawal.nawal)}
                   nawalName={lunations.nawal.nawal}
-                  title={`Nawal fecha`}
+                  title={`Nacimiento`}
                   day={lunations.nawal.energy}
                 />
                 <NawalCard
@@ -70,7 +72,7 @@ export const Lunations = ({lunations}) => {
                 <NawalCard
                   imageSource={() => getImage(lunations.nawal.nawal)}
                   nawalName={lunations.nawal.nawal}
-                  title={`Nawal fecha`}
+                  title={`Nacimiento`}
                   day={lunations.nawal.energy}
                 />
                 <NawalCard
