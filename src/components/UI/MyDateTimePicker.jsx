@@ -3,8 +3,9 @@ import React, { useEffect, useState } from 'react';
 import { View, Button, Platform } from 'react-native';
 import DateTimePicker from '@react-native-community/datetimepicker';
 import { cholqij, prettiDate, usableDate } from '../../utils/cholqij';
+import { PrimaryButton } from './PrimaryButton';
 
-export const MyDateTimePicker = ({setSelectedDate}) => {
+export const MyDateTimePicker = ({setSelectedDate, label}) => {
     const [date, setDate] = useState(new Date());
     const [mode, setMode] = useState('date');
     const [show, setShow] = useState(false);
@@ -40,9 +41,10 @@ export const MyDateTimePicker = ({setSelectedDate}) => {
 
     
     return (
-      <View>
+      <View style={{ marginBottom:15 }}>
         <View>
-          <Button onPress={showDatepicker} title="Seleccione una fecha" />
+        
+          <PrimaryButton onPress={showDatepicker} label={label} color={"#444488"} />
         </View>
         {/* <View>
           <Button onPress={showTimepicker} title="Select time" />

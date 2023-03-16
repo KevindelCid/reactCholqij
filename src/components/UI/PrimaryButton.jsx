@@ -1,12 +1,26 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, Pressable } from 'react-native'
 
 
 
-export const PrimaryButton = () => {
+export const PrimaryButton = ({ label, onPress=()=>{}, color=null, style={} }) => {
   return (
-   <View>
-    <Text></Text>
-   </View>
+    <Pressable
+    onPress={onPress}
+  >
+    <View
+        style={{
+          borderRadius: 12,
+          minHeight: 40,
+          width: "100%",
+          backgroundColor: color || "#444455",
+          justifyContent: "center",
+          alignItems: "center",
+          flex:1
+        }}
+      >
+        <Text style={{ color: "#fff" }}>{label}</Text>
+      </View>
+      </Pressable>
   )
 }

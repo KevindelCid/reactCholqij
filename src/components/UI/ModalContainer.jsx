@@ -1,23 +1,22 @@
 
 import React from 'react'
 import { View, Pressable, Text, Modal, StyleSheet} from 'react-native'
- 
+import Icon from 'react-native-vector-icons/FontAwesome';
 
-export const ModalContainer = ({ isVisible=false,  children, onPress, onClose }) => {
+export const ModalContainer = ({ isVisible=false,  children, onPress, onClose, whitOutMeaning =false }) => {
   return (
     isVisible && (
       <Modal
       animationType="fade"
       transparent={true}
       visible={isVisible}
-      
     >
          <View style={styles.modalContainer}>
-        <View style={styles.modalContent}>
+        <View style={{...styles.modalContent, height: whitOutMeaning ? 340 : 600}}>
         <Pressable
-              style={{ position: "absolute", zIndex:20, right: 20, top: 10, width:25, height:25,  }}
+              style={{ position: "absolute", zIndex:20, right: 20, top: 10,  }}
               onPress={() => onClose() }>
-              <Text style={{...styles.textStyle, }}>X</Text>
+              <Icon name="close" size={25} color="#444455" />
             </Pressable>
           
           {children && children}</View>
@@ -44,7 +43,7 @@ const styles = StyleSheet.create({
     padding: 20,
     shadowColor: '#000',
     width: 320,
-      height: "75%",
+      height: 700,
     shadowOffset: {
       width: 0,
       height: 2,

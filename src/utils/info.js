@@ -376,309 +376,79 @@ export const infoNawals = [
   },
   {
     nawal: "Wo'",
-    meaning:
-      "El jaguar o el ocelote, la madurez y la fuerza interior, la caza y la astucia. Propicio para la toma de decisiones importantes y la reflexión espiritual. También se cree que Wo' tiene una fuerte conexión con los sueños y la interpretación de los mismos.",
-    positive: [
-      "Madurez y sabiduría",
-      "Fuerza física y mental",
-      "Agilidad y astucia en la caza",
-      "Habilidad para la toma de decisiones importantes",
-      "Conexión con los sueños y la interpretación de los mismos",
-    ],
-    negative: [
-      "Tendencia a ser solitario o aislado",
-      "Propenso a la agresión o el comportamiento violento",
-      "Puede ser demasiado crítico o exigente consigo mismo o con los demás",
-      "Riesgo de enfermedades relacionadas con la digestión o el estómago",
-    ],
+    meaning: null
   },
   {
     nawal: "Pop",
-    meaning:
-      "Este nawal simboliza la energía y la fuerza de la juventud. Representa a los jóvenes, especialmente aquellos que tienen un gran potencial y pueden llegar a ser líderes destacados en su comunidad. También está asociado con la creatividad y la innovación, así como con la capacidad de superar obstáculos y encontrar soluciones a los problemas. En el aspecto negativo, Pop puede manifestarse como terquedad, falta de flexibilidad y tendencia a imponer su voluntad sobre los demás.",
-    positive: [
-      "Liderazgo y habilidades para la organización",
-      "Comunicación efectiva y persuasiva",
-      "Innovación y creatividad",
-      "Visión para identificar oportunidades",
-      "Capacidad para resolver problemas y superar obstáculos",
-    ],
-    negative: [
-      "Tendencia a ser terco o inflexible",
-      "Puede ser manipulador o usar la información para su propio beneficio",
-      "Riesgo de experimentar conflictos o desacuerdos con otros",
-      "Posible dificultad para establecer límites o respetar los límites de otros",
-    ],
+    meaning: null
   },
   {
     nawal: "Sip",
-    meaning: "Este nawal representa el maíz y la abundancia. Está asociado con la prosperidad, la fertilidad y la cosecha. También se asocia con el trabajo duro y la dedicación, ya que la siembra y la cosecha requieren una gran cantidad de esfuerzo y cuidado. En el aspecto negativo, Sip puede manifestarse como avaricia o envidia, y puede haber un riesgo de escasez o pérdida si no se trabaja lo suficientemente duro o no se presta la debida atención a las responsabilidades.",
-    positive: [
-      "Abundancia y prosperidad",
-      "Fertilidad y crecimiento",
-      "Trabajo duro y dedicación",
-      "Generosidad y gratitud"
-    ],
-    negative: [
-      "Riesgo de avaricia o envidia",
-      "Posible escasez o pérdida si no se trabaja lo suficientemente duro",
-      "Puede ser difícil encontrar el equilibrio entre la vida laboral y la vida personal",
-      "Posible falta de gratitud o reconocimiento por los logros obtenidos"
-    ]
+    meaning: null
   },
   {
     nawal: "Sotz'",
-    meaning: "El nawal Sotz' está asociado con el murciélago, que en la cultura maya se consideraba un animal sagrado y místico. Este nawal se relaciona con la intuición, la percepción extrasensorial y la capacidad de ver más allá de lo evidente. En el aspecto negativo, Sotz' puede manifestarse como una tendencia a ser manipulador o engañoso, o una falta de claridad en la comunicación.",
-    positive: [
-      "Intuición y percepción extrasensorial",
-      "Capacidad de ver más allá de lo evidente",
-      "Habilidad para adaptarse a diferentes situaciones",
-      "Habilidad para comunicarse de manera efectiva"
-    ],
-    negative: [
-      "Posible tendencia a ser manipulador o engañoso",
-      "Posible falta de claridad en la comunicación",
-      "Puede haber un riesgo de confundir la intuición con la paranoia",
-      "Posible tendencia a ser excesivamente reservado o aislado"
-    ]
+    meaning: null
   },
   {
     nawal: "Sek",
-    meaning: "El nawal Sek está relacionado con el misterio y la magia. Se asocia con la creatividad y la capacidad de manifestar las propias intenciones en el mundo físico. En el aspecto negativo, Sek puede manifestarse como una tendencia a ser dogmático o inflexible, o una falta de disposición para escuchar los puntos de vista de los demás.",
-    positive: [
-      "Creatividad y habilidad para manifestar las propias intenciones",
-      "Capacidad para conectar con lo misterioso y lo desconocido",
-      "Habilidad para trabajar en equipo y colaborar con otros",
-      "Capacidad para adaptarse a situaciones nuevas o desafiantes"
-    ],
-    negative: [
-      "Posible tendencia a ser dogmático o inflexible",
-      "Posible falta de disposición para escuchar los puntos de vista de los demás",
-      "Posible tendencia a ser excesivamente crítico o perfeccionista",
-      "Posible dificultad para comprometerse o tomar decisiones importantes"
-    ]
+    meaning: null
   },
   {
     nawal: "Xul",
-    meaning: "El nawal Xul está relacionado con la fertilidad, la prosperidad y la abundancia. También se asocia con la paciencia y la tenacidad, y se cree que puede ayudar a superar los obstáculos y las dificultades. En el aspecto negativo, Xul puede manifestarse como una tendencia a ser codicioso o apegado a las posesiones materiales, o una falta de disposición para compartir con los demás.",
-    positive: [
-      "Fertilidad, prosperidad y abundancia",
-      "Paciencia y tenacidad para superar obstáculos",
-      "Capacidad para encontrar soluciones creativas a los problemas",
-      "Habilidad para ayudar a los demás y compartir los propios recursos"
-    ],
-    negative: [
-      "Posible tendencia a ser codicioso o apegado a las posesiones materiales",
-      "Posible falta de disposición para compartir con los demás",
-      "Posible dificultad para aceptar los cambios o adaptarse a situaciones nuevas",
-      "Posible tendencia a ser terco o inflexible en las propias creencias o puntos de vista"
-    ]
+    meaning: null
   },
   {
     nawal: "Yaxk'in",
-    meaning: "El nawal Yaxk'in está relacionado con el sol, la luz y la vida. Se asocia con la vitalidad, la energía y el crecimiento, así como con la creatividad y la inspiración. En el aspecto negativo, puede manifestarse como una tendencia a ser egocéntrico o arrogante, o una falta de consideración por los demás.",
-    positive: [
-      "Vitalidad, energía y crecimiento",
-      "Creatividad e inspiración",
-      "Optimismo y entusiasmo por la vida",
-      "Habilidad para liderar y motivar a los demás"
-    ],
-    negative: [
-      "Posible tendencia a ser egocéntrico o arrogante",
-      "Posible falta de consideración por los demás",
-      "Posible impaciencia o impulsividad",
-      "Posible tendencia a asumir demasiado o a sobrecargar la propia agenda"
-    ]
+    meaning: null
   },
   {
     nawal: "Mol",
-    meaning: "El nawal Mol está relacionado con la energía femenina y la fertilidad, así como con la tierra y la naturaleza. Se asocia con la paciencia, la perseverancia y la sabiduría ancestral. En el aspecto negativo, puede manifestarse como una tendencia a ser terco o inflexible, o una falta de adaptabilidad ante los cambios.",
-    positive: [
-      "Energía femenina y fertilidad",
-      "Paciencia y perseverancia",
-      "Sabiduría ancestral y conexión con la naturaleza",
-      "Habilidad para adaptarse a las situaciones y cambios"
-    ],
-    negative: [
-      "Posible tendencia a ser terco o inflexible",
-      "Posible falta de adaptabilidad ante los cambios",
-      "Posible tendencia a apegarse demasiado al pasado o a tradiciones obsoletas",
-      "Posible tendencia a ser demasiado crítico o exigente consigo mismo o con los demás"
-    ]
+    meaning: null
   },
   {
     nawal: "Ch'en",
-    meaning: "El nawal Ch'en se relaciona con la energía masculina y la fuerza vital. Se asocia con la creatividad, la innovación y la transformación. En el aspecto negativo, puede manifestarse como una tendencia a ser impulsivo o imprudente, o una falta de dirección o enfoque en la vida.",
-    positive: [
-      "Energía masculina y fuerza vital",
-      "Creatividad e innovación",
-      "Capacidad para transformar la vida o las situaciones",
-      "Determinación y pasión por alcanzar metas"
-    ],
-    negative: [
-      "Posible tendencia a ser impulsivo o imprudente",
-      "Posible falta de dirección o enfoque en la vida",
-      "Posible tendencia a ser demasiado autocrítico o autodestructivo",
-      "Posible tendencia a ser manipulador o dominante en las relaciones interpersonales"
-    ]
+    meaning: null
   },
   {
     nawal: "Yax",
-    meaning: "El nawal Yax se relaciona con la belleza, la armonía y la estética. Se asocia con la creatividad y el arte, así como con la sabiduría y la inteligencia. En el aspecto negativo, puede manifestarse como una tendencia a ser vanidoso o superficial, o una falta de objetividad o discernimiento en la toma de decisiones.",
-    positive: [
-      "Belleza, armonía y estética",
-      "Creatividad y arte",
-      "Sabiduría e inteligencia",
-      "Capacidad para ver y apreciar lo positivo en las personas y situaciones"
-    ],
-    negative: [
-      "Posible tendencia a ser vanidoso o superficial",
-      "Posible falta de objetividad o discernimiento en la toma de decisiones",
-      "Posible tendencia a ser crítico o exigente con los demás",
-      "Posible tendencia a ser indiferente o insensible a las necesidades de los demás"
-    ]
+    meaning: null
   },
   {
     nawal: "Sak",
-    meaning: "Blanco",
-    positive: [
-      "Honestidad",
-      "Integridad",
-      "Capacidad de liderazgo",
-      "Coraje para enfrentar situaciones difíciles",
-      "Espíritu de justicia"
-    ],
-    negative: [
-      "Tendencia a juzgar a los demás",
-      "Arrogancia",
-      "Prepotencia",
-      "Intransigencia",
-      "Falta de humildad"
-    ]
+    meaning: null
   },
   {
     nawal: "Kej",
-    meaning: "Venado",
-    positive: [
-      "Fortaleza física y mental",
-      "Habilidad para superar obstáculos",
-      "Capacidad de liderazgo",
-      "Sensibilidad y sabiduría",
-      "Capacidad de tomar decisiones acertadas"
-    ],
-    negative: [
-      "Tendencia a ser impulsivo",
-      "Falta de paciencia",
-      "Tendencia a imponer ideas",
-      "Incapacidad para escuchar a los demás",
-      "Tendencia a ser terco y obstinado"
-    ]
+    meaning: null
   }, 
   {
     nawal: "Mac",
-    meaning: "Inspiración",
-    positive: [
-      "Capacidad para inspirar a otros y motivarlos",
-      "Habilidad para encontrar soluciones creativas a los problemas",
-      "Momento para explorar nuevas ideas y proyectos"
-    ],
-    negative: [
-      "Puede haber tendencia a la distracción y a no enfocarse en lo importante",
-      "Posibilidad de problemas de comunicación o malentendidos",
-      "Riesgo de perder oportunidades por no tomar acción a tiempo"
-    ]
+    meaning: null
   },
   {
     nawal: "K'ank'in",
-    meaning:
-      "El maíz espiritual, el corazón del cielo y de la tierra, la armonía, la productividad, la resurrección y el renacimiento",
-    positive: [
-      "Es un buen momento para sembrar ideas y proyectos",
-      "Fortalece las relaciones familiares y de amistad",
-      "Facilita la comunicación y la toma de decisiones",
-      "Representa la armonía y la productividad en el trabajo",
-      "Favorece la abundancia y la prosperidad",
-    ],
-    negative: [
-      "Puede haber conflictos y desacuerdos en las relaciones personales",
-      "Hay que tener cuidado con la envidia y el egoísmo",
-      "Puede haber obstáculos en el trabajo o en los proyectos personales",
-      "Hay que evitar el derroche y la extravagancia",
-      "Puede haber problemas de salud o situaciones de riesgo",
-    ],
+    meaning: null
   },
   {
     nawal: "Muwan",
-    meaning: "Conocimiento y madurez.",
-    positive: [
-      "Buen momento para adquirir conocimientos y habilidades",
-      "Bueno para resolver problemas",
-      "Buena energía para la toma de decisiones importantes"
-    ],
-    negative: [
-      "Puede haber obstáculos o retrasos en los proyectos",
-      "Puede haber problemas de comunicación",
-      "Puede haber falta de claridad en la toma de decisiones"
-    ]
+    meaning: null
   },
   {
     nawal: "Pax",
-    meaning: "Estacionalidad y abundancia",
-    positive: [
-      "Intuición y percepción aguda",
-      "Gran habilidad para aprender y enseñar",
-      "Tiene facilidad para resolver problemas",
-      "Puede tener una gran riqueza",
-    ],
-    negative: [
-      "Tendencia a tener envidia y avaricia",
-      "Puede ser egoísta y orgulloso",
-      "Tendencia a ser tímido o aislado",
-    ],
+    meaning: null
   },
   {
     nawal: "K'ayab'",
-    meaning: "Cosecha de maíz",
-    positive: [
-      "Productividad y abundancia",
-      "Limpieza y purificación",
-      "Creatividad y fertilidad"
-    ],
-    negative: [
-      "Desperdicio o mal uso de recursos",
-      "Pereza o falta de acción",
-      "Dificultades para tomar decisiones"
-    ]
+    meaning: null
   },
   {
     nawal: "Kumk'u",
-    meaning:
-      "El guardián del fuego sagrado y de la casa, protector de la comunidad y de la familia.",
-    positive: [
-      "Protector y guardián de la familia y comunidad.",
-      "Cuidado y conservación del hogar y la comunidad.",
-      "Capacidad para trabajar en equipo y resolver conflictos.",
-      "Habilidad para la creación de hogares armoniosos y equilibrados.",
-    ],
-    negative: [
-      "Inestabilidad en el hogar o en la comunidad.",
-      "Problemas en las relaciones familiares o comunitarias.",
-      "Tendencia a ser demasiado posesivo o controlador en el ámbito familiar.",
-      "Puede haber dificultad para confiar en otros y formar relaciones duraderas.",
-    ],
+    meaning: null
   },
   {
     nawal: "Wayeb'",
-    meaning: "El mes Wayeb' era considerado un tiempo infortunado por los antiguos Mayas. Durante este periodo, se creía que los portales hacia el mundo de los muertos se abrían y los dioses oscuros y los demonios podían vagar libremente por el mundo de los vivos.",
-    positive: [
-      "Tiempo de introspección y reflexión.",
-      "Renovación y preparación para el nuevo ciclo.",
-      "Momento para agradecer y celebrar el ciclo que termina."
-    ],
-    negative: [
-      "Puede ser un tiempo de desafíos y dificultades.",
-      "Se considera un periodo inapropiado para emprender nuevos proyectos o realizar grandes cambios en la vida."
-    ]
+    meaning: null
   }
   
   
@@ -694,4 +464,34 @@ export const infoNawals = [
   
   
   
+];
+
+export const phrases = {
+  footerMessage: "Es sumamente importante insistir en que en la descripción e interpretación anterior, es básica y general, por lo que, para el estudio a profundidad de la personalidad según esta forma de contar el tiempo llamada Cholq´ij, es menester acercarse a las abuelas y abuelos Ajq´ijab´ -contadores del tiempo-.",
+  copyRight: "© Los metodos utilizados para la creación de esta aplicación fueron obtenidos del libro << El Calendario Sagrado Maya, Método para el Cómputo del Tiempo >> del Maestro y Ajq'ij Audelino Sac Coyoy, con apoyo del Maestro Daniel Matúl y dirección del Maestro Jorge Fernando Flores Zepeda",
+  sponsors: [{name: "Ideas Diseño Web", shortName: "IDW", webSite: "https://ideasdw.com"}],
+  develpment: { message: "La aplicación fue desarrollada por:", developer:{ name: "Kevin Daniel del Cid Flores", githubUrl: "https://github.com/KevindelCid", linkedinUrl: "https://www.linkedin.com/in/kevindelcidf/", website: "https://kdelcid.netlify.app/" }}
+  
+}
+export const nawals = [
+  "B'atz",
+  "E",
+  "Aj",
+  "I'x",
+  "Tz'ikin",
+  "Ajmaq",
+  "No'j",
+  "Tijax",
+  "Kawoq",
+  "Ajpú",
+  "Imox",
+  "Iq'",
+  "Aq'ab'al",
+  "K'at",
+  "Kan",
+  "Keme",
+  "Keej",
+  "Q'anil",
+  "Toj",
+  "Tz'i'",
 ];
