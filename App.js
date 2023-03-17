@@ -1,6 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import React, { useEffect, useState } from "react";
-
+import SplashScreen from 'react-native-splash-screen'
 import {
   Card,
   Container,
@@ -46,6 +46,13 @@ export default function App() {
   useEffect(() => {
     setLunations(getMayanDate(selectedDate.usableDate));
   }, [selectedDate]);
+  
+  useEffect(() => {
+     SplashScreen.hide();
+  }, []);
+  
+
+
 
   return (
     <Container>
