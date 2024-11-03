@@ -4,17 +4,15 @@ import "moment/locale/es";
 import { haab } from "./haab";
 import { nawals } from "./info";
 
-
-
 export const usableDate = (year, month, day) => {
-  moment.tz.setDefault("America/Guatemala");
+  // moment.tz.setDefault("America/Guatemala");
   const date = new Date(year, month, day);
   const formattedDate = moment(date).locale("es").format("YYYY-MM-DD");
   // .format("DD [de] MMMM [de] YYYY");
   return formattedDate;
 };
 export const prettiDate = (year, month, day) => {
-  moment.tz.setDefault("America/Guatemala");
+  // moment.tz.setDefault("America/Guatemala");
   const date = new Date(year, month, day);
   const formattedDate = moment(date)
     .locale("es")
@@ -23,9 +21,20 @@ export const prettiDate = (year, month, day) => {
   return formattedDate;
 };
 
+// export const prettiDate = (year, month, day) => {
+//   // No establecer una zona horaria por defecto
+//   const date = new Date(year, month - 1, day);
+//   // Restamos 1 a month porque Date usa índices de meses desde 0
+//   const formattedDate = moment(date)
+//     .locale("es")
+//     .format("DD [de] MMMM [de] YYYY");
+//   return formattedDate;
+// };
+
 export const getMayanDate = (dateString) => {
   // restaFechaHoy("1900-03-21")
   const date = new Date(dateString);
+
   const baseDate = new Date("457-01-18");
 
   const diff = date.getTime() - baseDate.getTime();
@@ -190,13 +199,10 @@ function calcularNawalDeIteraciones(nawalInicio, iteraciones) {
 
   for (let i = 0; i < iteraciones; i++) {
     index = (index + 1) % 20;
-   
   }
 
   return nawals[index];
 }
-
-
 
 function addDays(date, days) {
   const result = new Date(date);
@@ -205,13 +211,13 @@ function addDays(date, days) {
 }
 
 export const getGregorianDate = (energy, nawalFecha) => {
-  moment.tz.setDefault("America/Guatemala");
+  // moment.tz.setDefault("America/Guatemala");
 
   const fechaActual = new Date();
   const date = usableDate(
     fechaActual.getFullYear(),
     fechaActual.getMonth(),
-    fechaActual.getDate()+1
+    fechaActual.getDate() + 1
   );
   const cholqijToday = getMayanDate(date);
 
@@ -222,7 +228,9 @@ export const getGregorianDate = (energy, nawalFecha) => {
 
   for (let i = 0; i < 260; i++) {
     days++;
-    if (calcularNawalDeIteraciones(cholqijToday.nawal.nawal, days) === nawalFecha) {
+    if (
+      calcularNawalDeIteraciones(cholqijToday.nawal.nawal, days) === nawalFecha
+    ) {
       if (calcular(cholqijToday.nawal.energy, days) === energy) {
         const newDate = addDays(date, days);
         const resultDate = usableDate(
@@ -230,14 +238,14 @@ export const getGregorianDate = (energy, nawalFecha) => {
           newDate.getMonth(),
           newDate.getDate() + 1
         );
-      
-          dateResult = resultDate
+
+        dateResult = resultDate;
 
         break;
       }
     }
   }
- 
+
   return dateResult;
 };
 

@@ -376,103 +376,104 @@ export const infoNawals = [
   },
   {
     nawal: "Wo'",
-    meaning: null
+    meaning: null,
   },
   {
     nawal: "Pop",
-    meaning: null
+    meaning: null,
   },
   {
     nawal: "Sip",
-    meaning: null
+    meaning: null,
   },
   {
     nawal: "Sotz'",
-    meaning: null
+    meaning: null,
   },
   {
     nawal: "Sek",
-    meaning: null
+    meaning: null,
   },
   {
     nawal: "Xul",
-    meaning: null
+    meaning: null,
   },
   {
     nawal: "Yaxk'in",
-    meaning: null
+    meaning: null,
   },
   {
     nawal: "Mol",
-    meaning: null
+    meaning: null,
   },
   {
     nawal: "Ch'en",
-    meaning: null
+    meaning: null,
   },
   {
     nawal: "Yax",
-    meaning: null
+    meaning: null,
   },
   {
     nawal: "Sak",
-    meaning: null
+    meaning: null,
   },
   {
     nawal: "Kej",
-    meaning: null
-  }, 
+    meaning: null,
+  },
   {
     nawal: "Mac",
-    meaning: null
+    meaning: null,
   },
   {
     nawal: "K'ank'in",
-    meaning: null
+    meaning: null,
   },
   {
     nawal: "Muwan",
-    meaning: null
+    meaning: null,
   },
   {
     nawal: "Pax",
-    meaning: null
+    meaning: null,
   },
   {
     nawal: "K'ayab'",
-    meaning: null
+    meaning: null,
   },
   {
     nawal: "Kumk'u",
-    meaning: null
+    meaning: null,
   },
   {
     nawal: "Wayeb'",
-    meaning: null
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+    meaning: null,
+  },
 ];
 
 export const phrases = {
-  footerMessage: "Es sumamente importante insistir en que en la descripción e interpretación anterior, es básica y general, por lo que, para el estudio a profundidad de la personalidad según esta forma de contar el tiempo llamada Cholq´ij, es menester acercarse a las abuelas y abuelos Ajq´ijab´ -contadores del tiempo-.",
-  copyRight: "© Los metodos utilizados para la creación de esta aplicación fueron obtenidos del libro << El Calendario Sagrado Maya, Método para el Cómputo del Tiempo >> del Maestro y Ajq'ij Audelino Sac Coyoy, con apoyo del Maestro Daniel Matúl y dirección del Maestro Jorge Fernando Flores Zepeda",
-  sponsors: [{name: "Ideas Diseño Web", shortName: "IDW", webSite: "https://ideasdw.com"}],
-  develpment: { message: "La aplicación fue desarrollada por:", developer:{ name: "Kevin Daniel del Cid Flores", githubUrl: "https://github.com/KevindelCid", linkedinUrl: "https://www.linkedin.com/in/kevindelcidf/", website: "https://kdelcid.netlify.app/" }}
-  
-}
+  footerMessage:
+    "Es sumamente importante insistir en que la descripción e interpretación anterior, es básica y general, por lo que, para el estudio a profundidad de la personalidad según esta forma de contar el tiempo llamada Cholq´ij, es menester acercarse a las abuelas y abuelos Ajq´ijab´ -contadores del tiempo-.",
+  copyRight:
+    "© Los metodos utilizados para la creación de esta aplicación fueron obtenidos del libro << El Calendario Sagrado Maya, Método para el Cómputo del Tiempo >> del Maestro y Ajq'ij Audelino Sac Coyoy, con apoyo del Maestro Daniel Matúl y dirección del Dr. Jorge Fernando Flores Zepeda",
+  sponsors: [
+    {
+      name: "Ideas Diseño Web",
+      shortName: "IDW",
+      webSite: "https://ideasdw.com",
+    },
+  ],
+  develpment: {
+    message: "Programador y diseñador:",
+    developer: {
+      name: "Kevin del Cid",
+      githubUrl: "https://github.com/KevindelCid",
+      linkedinUrl: "https://www.linkedin.com/in/kevindelcidf/",
+      // website: "https://dccoders.netlify.app/",
+    },
+  },
+};
 export const nawals = [
   "B'atz",
   "E",

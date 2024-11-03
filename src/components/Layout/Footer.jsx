@@ -8,8 +8,8 @@ export const Footer = () => {
     <>
       <View
         style={{
-          borderTopLeftRadius: 12, 
-          borderTopRightRadius: 12, 
+          borderTopLeftRadius: 12,
+          borderTopRightRadius: 12,
           backgroundColor: "#444455",
           width: "100%",
           justifyContent: "center",
@@ -71,14 +71,14 @@ export const Footer = () => {
           >
             <Icon name="linkedin" size={25} color="#fff" />
           </Pressable>
-          <Pressable
+          {/* <Pressable
             style={{ marginRight: 30 }}
             onPress={() =>
               Linking.openURL(phrases.develpment.developer.website)
             }
           >
             <Icon name="window-maximize" size={25} color="#fff" />
-          </Pressable>
+          </Pressable> */}
         </View>
       </View>
     </>

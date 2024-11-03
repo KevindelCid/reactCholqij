@@ -1,6 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import React, { useEffect, useState } from "react";
-import SplashScreen from 'react-native-splash-screen'
+import SplashScreen from "react-native-splash-screen";
 import {
   Card,
   Container,
@@ -23,16 +23,17 @@ import { getImage } from "./src/utils";
 import { PrimaryButton } from "./src/components/UI/PrimaryButton";
 import { Footer } from "./src/components/Layout/Footer";
 import { InverseMayanCalc } from "./src/components/UI";
-import * as ScreenOrientation from 'expo-screen-orientation';
+import * as ScreenOrientation from "expo-screen-orientation";
 
 export default function App() {
   useEffect(() => {
     async function changeScreenOrientation() {
-      await ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.PORTRAIT);
+      await ScreenOrientation.lockAsync(
+        ScreenOrientation.OrientationLock.PORTRAIT
+      );
     }
     changeScreenOrientation();
   }, []);
-
 
   const [lunations, setLunations] = useState({});
   const [selectedDate, setSelectedDate] = useState({
@@ -46,13 +47,10 @@ export default function App() {
   useEffect(() => {
     setLunations(getMayanDate(selectedDate.usableDate));
   }, [selectedDate]);
-  
+
   useEffect(() => {
-     SplashScreen.hide();
+    SplashScreen.hide();
   }, []);
-  
-
-
 
   return (
     <Container>
@@ -69,26 +67,49 @@ export default function App() {
             {selectedDate.prettiDate}
           </Text>
         </View>
-        <MyDateTimePicker label={"Calcular Nawales"} setSelectedDate={setSelectedDate} />
-        <View style={{ flexDirection: "row"  }}>
-        <View style={{ width: "67%", marginRight:"3%",}}>
-           <InverseMayanCalc
-          label={"Calcular a la inversa"}
+        <MyDateTimePicker
+          label={"Calcular Nawales"}
           setSelectedDate={setSelectedDate}
         />
+        <View style={{ flexDirection: "row" }}>
+          <View style={{ width: "67%", marginRight: "3%" }}>
+            <InverseMayanCalc
+              label={"Calcular a la inversa"}
+              setSelectedDate={setSelectedDate}
+            />
+          </View>
+          <View style={{ width: "30%" }}>
+            <PrimaryButton
+              label={"Hoy"}
+              color={"#444114"}
+              onPress={() => {
+                const now = new Date();
+                const localYear = now.getFullYear();
+                const localMonth = now.getMonth();
+                const localDay = now.getDate();
+
+                // Establece esta fecha sin afectar por la zona horaria
+                const date = new Date(localYear, localMonth, localDay, 0, 0, 0);
+
+                setSelectedDate({
+                  usableDate: usableDate(
+                    date.getFullYear(),
+                    date.getMonth(),
+                    date.getDate()
+                  ),
+                  prettiDate: prettiDate(
+                    date.getFullYear(),
+                    date.getMonth(),
+                    date.getDate()
+                  ),
+                  year: date.getFullYear(),
+                  month: date.getMonth(),
+                  day: date.getDate(),
+                });
+              }}
+            />
+          </View>
         </View>
-        <View style={{ width: "30%" }}>
-        <PrimaryButton label={"Hoy"} color={"#444114"} onPress={()=>{
-          const date = new Date()
-          setSelectedDate({ 
-            usableDate: usableDate(date.getFullYear(), date.getMonth(), date.getDate()),
-            prettiDate: prettiDate(date.getFullYear(), date.getMonth(), date.getDate()),
-            year: date.getFullYear(), month: date.getMonth(), day: date.getDate() 
-          })
-        }} />
-        </View>
-        </View>
-       
 
         <Lunations lunations={lunations} />
       </ContentContainer>
